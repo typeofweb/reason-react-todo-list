@@ -2,7 +2,7 @@ open Belt;
 
 [@bs.val] external unsafeJsonParse : string => 'a = "JSON.parse";
 
-let _storageNamespace = "reason-react-todo";
+let _storageNamespace = "reason-react-todo-list";
 
 let saveTodos = (todos: list(TodoItem.todo)) =>
   switch (Js.Json.stringifyAny(List.toArray(todos))) {

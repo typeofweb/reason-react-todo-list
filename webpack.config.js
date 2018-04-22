@@ -13,10 +13,10 @@ module.exports = {
       ]
     : ["./lib/es6/src/Index.bs.js"],
   mode: isProd ? "production" : "development",
-  devtool: isProd ? "source-map" : "eval-source-map",
+  devtool: isProd ? false : "eval-source-map",
   output: {
     path: outputDir,
-    publicPath: outputDir,
+    publicPath: "/build/",
     filename: "Index.js"
   },
   devServer: {
