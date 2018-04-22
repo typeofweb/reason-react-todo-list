@@ -2,9 +2,11 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "reason.path.refmt": "refmt",
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
     "lib/**": true
-  }
+  },
+  "reason.format.width": 80
 }
